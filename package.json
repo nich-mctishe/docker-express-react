@@ -15,7 +15,14 @@
     "react-scripts": "1.1.5",
     "lodash": "4.17.5",
     "react-router": "4.3.1",
-    "react-router-dom": "4.3.1"
+    "react-router-dom": "4.3.1",
+    "redux": "4.0.0",
+    "redux-persist": "5.10.0",
+    "react-redux": "5.0.7",
+    "node-seeder": "https://github.com/nich-mctishe/node-seeder.git#1.0.0",
+    "lodash": "4.17.10",
+    "mongoose": "5.0.6",
+    "mongoose-find-or-create": "1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

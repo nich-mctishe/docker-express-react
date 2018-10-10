@@ -1,4 +1,5 @@
 #!/bin/bash
 
-node_modules/.bin/forever restartall
+touch src/server/server.js
+
 log
