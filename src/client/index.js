@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './pages/base/App';
+import App from './components/base/App';
 import registerServiceWorker from './registerServiceWorker';
 import './assets/css/pcss/main.css'
 import { BrowserRouter } from 'react-router-dom'

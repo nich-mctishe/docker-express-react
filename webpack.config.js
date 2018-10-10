@@ -30,7 +30,7 @@ let config = {
       template: './public/index.html',
       favicon: './public/favicon.ico',
       filename: 'index.html',
-      inject: 'body'
+      inject: false
     })
   ]
 };

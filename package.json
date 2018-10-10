@@ -19,7 +19,7 @@
     "redux": "4.0.0",
     "redux-persist": "5.10.0",
     "react-redux": "5.0.7",
-    "node-seeder": "https://github.com/nich-mctishe/node-seeder.git#1.0.0",
+    "node-seeder": "https://github.com/nich-mctishe/node-seeder.git#master",
     "lodash": "4.17.10",
     "mongoose": "5.0.6",
     "mongoose-find-or-create": "1.2.0"
@@ -45,7 +45,8 @@
     "postcss-preset-env": "^6.0.6",
     "postcss-flexboxfixer": "0.0.5",
     "html-webpack-plugin": "^3.2.0",
-    "clean-webpack-plugin": "^0.1.19"
+    "clean-webpack-plugin": "^0.1.19",
+    "babel-plugin-wildcard": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

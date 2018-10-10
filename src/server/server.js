@@ -6,7 +6,7 @@ const webpack = require('webpack');
 const global = require('./config/options')
 const seeder = require('./config/seeder')
 const mongoose = require('mongoose')
-console.log(global.MONGO_URL);
+
 mongoose
   .plugin(require('mongoose-find-or-create'))
   .set('debug', true) // make this based on env var
@@ -23,12 +23,20 @@ mongoose
         publicPath: '/'
       }));
 
+      require('./routes')(app)
+
       app.use('*', function (req, res, next) {
-        var filename = path.join(compiler.outputPath,'index.html');
-        compiler.outputFileSystem.readFile(filename, function(err, result){
+        const filename = path.join(compiler.outputPath,'index.html');
+        console.log(filename);
+
+        compiler.outputFileSystem.readFile(filename, function(err, result) {
           if (err) {
             return next(err);
           }
+          console.log(err);
+          console.log('----------------------');
+          console.log(result);
+          console.log('----------------------');
           res.set('content-type','text/html');
           res.send(result);
           res.end();
@@ -38,5 +46,3 @@ mongoose
       app.listen(port, () => console.log(`Listening on port ${port}`));
     })
   })
-
-require('./routes')(app)

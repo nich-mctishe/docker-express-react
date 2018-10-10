@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import logo from '../assets/img/logo.svg';
 
-class Main extends Component {
+export default class Index extends Component {
   state = {
     response: ''
   };
@@ -38,5 +38,3 @@ class Main extends Component {
     );
   }
 }
-
-export default Main;
