@@ -1,6 +1,6 @@
 const path = require('path')
 
-const dbName = 'fable'
+const dbName = 'database'
 
 module.exports = {
   debug: true,
